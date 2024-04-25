@@ -1,3 +1,13 @@
 
-Δ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ηµν‘8σ£ςρπ1J$0cf1b40c-bcba-4aed-b2a9-00626a8b1ef6
+‚
+java:S1854":Remove this useless assignment to local variable "cambio".(εόΊ–ύÿÿÿÿ8έ‘Υσπ1J$3541cefc-3b47-4bf1-aa90-b958202bae76
+ƒ
+java:S1854";Remove this useless assignment to local variable "entrada".(¥µΩ“ώÿÿÿÿ8ή‘Υσπ1J$75c16181-e342-455d-b06a-1d97ab9b970d
+t
+java:S1481",Remove this unused "entrada" local variable.(¥µΩ“ώÿÿÿÿ8α‘Υσπ1J$58023d59-4702-49d9-a1d1-5de0fe9266e5
+s
+java:S1481"+Remove this unused "cambio" local variable.(εόΊ–ύÿÿÿÿ8β‘Υσπ1J$24255d64-1c55-4c44-a604-24029b4d16f7
+r	java:S106	"+Replace this use of System.out by a logger.(έ§¬όÿÿÿÿ8ίΉήσπ1J$3d23cf61-bac8-4d56-b50d-e74c17c41daf
+r	java:S106
+"+Replace this use of System.out by a logger.( …σύÿÿÿÿ8ωΑίσπ1J$9bb5d82a-cf6b-46fa-b64d-ece5064efbd4
+r	java:S106"+Replace this use of System.out by a logger.(έ§¬όÿÿÿÿ8®¦ησπ1J$964f0acd-d61e-4e6c-ac04-bfddee0a5e34
