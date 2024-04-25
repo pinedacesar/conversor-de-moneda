@@ -16,6 +16,12 @@ El conversor de monedas permite realizar las siguientes conversiones:
 4. **Real Brasileño a Dólar**
 5. **Dólar a Peso Colombiano**
 6. **Peso Colombiano a Dólar**
+7. **Dólar a Boliviano**
+8. **Boliviano a Dólar**
+9. **Dólar a Pesos Chilenos**
+10. **Pesos Chilenos a Dólar**
+11. **Dólar a Pesos Mexicanos**
+12. **Pesos Mexicanos a Dólar**
 
 
 ## Funcionalidades
@@ -23,6 +29,7 @@ El conversor de monedas permite realizar las siguientes conversiones:
 - Interfaz de usuario simple y amigable.
 - Uso de la API de ExchangeRate-API.com para obtener tasas de cambio actualizadas.
 - Manejo de excepciones para garantizar la robustez del programa.
+- Generación de archivo txt con las consultas realizadas concatenando "consultas_yyyyMMdd-HHmmss"
 
 ## Tecnologías Utilizadas
 
