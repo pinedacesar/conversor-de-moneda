@@ -4,7 +4,5 @@ public class Principal {
         GestorDeConversion gestor = new GestorDeConversion();
         gestor.ejecutarConversiones();
 
-        System.out.println("Gracias por elegirnos, ALURA tu conversor de cambio preferido!!!");
-
     }
 }

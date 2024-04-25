@@ -174,5 +174,6 @@ public class GestorDeConversion {
             System.out.println("Error al escribir en el archivo.");
             e.printStackTrace();
         }
+        System.out.println("Gracias por elegirnos, ALURA tu conversor de cambio preferido!!!");
     }
 }
