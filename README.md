@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="img/Badge-Conversor.png" alt="Insignia de Alura Latam">
+</p>
+
 # Conversor de Monedas
 
 Este proyecto consiste en un conversor de monedas que utiliza la API de ExchangeRate-API.com para obtener los tipos de cambio entre diferentes monedas. El desafío fue propuesto por Alura como parte de su programa de aprendizaje.
