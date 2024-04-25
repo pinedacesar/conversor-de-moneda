@@ -12,7 +12,10 @@ public class GestorDeConversion {
     }
 
     public void ejecutarConversiones() {
-        while (true) {
+        boolean condicion = true;
+        while (condicion) {
+            BigDecimal cantidad;
+            BigDecimal montoDelCambio;
             System.out.println("****************************************");
             System.out.println("Sea Bienvenido/a al Conversor de Moneda\n");
 
@@ -23,7 +26,13 @@ public class GestorDeConversion {
                     4) Real Brasileño >>> Dólar
                     5) Dólar >>> Peso Colombiano
                     6) Peso Colombiano >>> Dólar
-                    7) Salir
+                    7) Dólar >>> Boliviano
+                    8) Boliviano >>> Dólar
+                    9) Dólar >>> Pesos Chilenos
+                    10) Pesos Chilenos >>> Dólar
+                    11) Dólar >>> Pesos Mexicanos
+                    12) Pesos Mexicanos >>> Dólar
+                    0) Salir
                     Elija una opción valida:
                     """;
             System.out.println(menu);
@@ -34,41 +43,78 @@ public class GestorDeConversion {
                 switch (opcion) {
                     case 1:
                         System.out.println("Ingrese la cantidad de dólares que desea convertir a Pesos Argentinos: ");
-                        BigDecimal cantidad1 = entrada.nextBigDecimal();
-                        BigDecimal montoDelCambio1 = cambio.conversion("USD", "ARS", cantidad1);
-                        System.out.println("El valor " + cantidad1 + " [USD] corresponde al valor final de =>>> " + montoDelCambio1 + " [ARS]");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("USD", "ARS", cantidad);
+                        System.out.println("El valor " + cantidad + " [USD] corresponde al valor final de =>>> " + montoDelCambio + " [ARS]");
                         break;
                     case 2:
                         System.out.println("Ingrese la cantidad de Pesos Argentinos que desea convertir a Dólares: ");
-                        BigDecimal cantidad2 = entrada.nextBigDecimal();
-                        BigDecimal montoDelCambio2 = cambio.conversion("ARS", "USD", cantidad2);
-                        System.out.println("El valor " + cantidad2 + " [ARS] corresponde al valor final de =>>> " + montoDelCambio2 + " [USD]");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("ARS", "USD", cantidad);
+                        System.out.println("El valor " + cantidad + " [ARS] corresponde al valor final de =>>> " + montoDelCambio + " [USD]");
                         break;
                     case 3:
                         System.out.println("Ingrese la cantidad de dólares que desea convertir a Real Brasileño: ");
-                        BigDecimal cantidad3 = entrada.nextBigDecimal();
-                        BigDecimal montoDelCambio3 = cambio.conversion("USD", "BRL", cantidad3);
-                        System.out.println("El valor " + cantidad3 + " [USD] corresponde al valor final de =>>> " + montoDelCambio3 + " [BRL]");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("USD", "BRL", cantidad);
+                        System.out.println("El valor " + cantidad + " [USD] corresponde al valor final de =>>> " + montoDelCambio + " [BRL]");
                         break;
                     case 4:
                         System.out.println("Ingrese la cantidad de Real Brasileño que desea convertir a Dólares: ");
-                        BigDecimal cantidad4 = entrada.nextBigDecimal();
-                        BigDecimal montoDelCambio4 = cambio.conversion("BRL", "USD", cantidad4);
-                        System.out.println("El valor " + cantidad4 + " [BRL] corresponde al valor final de =>>> " + montoDelCambio4 + " [USD]");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("BRL", "USD", cantidad);
+                        System.out.println("El valor " + cantidad + " [BRL] corresponde al valor final de =>>> " + montoDelCambio + " [USD]");
                         break;
                     case 5:
                         System.out.println("Ingrese la cantidad de dólares que desea convertir a Pesos Colombianos: ");
-                        BigDecimal cantidad5 = entrada.nextBigDecimal();
-                        BigDecimal montoDelCambio5 = cambio.conversion("USD", "COP", cantidad5);
-                        System.out.println("El valor " + cantidad5 + " [USD] corresponde al valor final de =>>> " + montoDelCambio5 + " [COP]");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("USD", "COP", cantidad);
+                        System.out.println("El valor " + cantidad + " [USD] corresponde al valor final de =>>> " + montoDelCambio + " [COP]");
                         break;
                     case 6:
                         System.out.println("Ingrese la cantidad de Pesos Colombianos que desea convertir a Dólares: ");
-                        BigDecimal cantidad6 = entrada.nextBigDecimal();
-                        BigDecimal montoDelCambio6 = cambio.conversion("COP", "USD", cantidad6);
-                        System.out.println("El valor " + cantidad6 + " [COP] corresponde al valor final de =>>> " + montoDelCambio6 + " [USD]");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("COP", "USD", cantidad);
+                        System.out.println("El valor " + cantidad + " [COP] corresponde al valor final de =>>> " + montoDelCambio + " [USD]");
                         break;
                     case 7:
+                        System.out.println("Ingrese la cantidad de dólares que desea convertir a Bolivianos: ");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("USD", "BOB", cantidad);
+                        System.out.println("El valor " + cantidad + " [USD] corresponde al valor final de =>>> " + montoDelCambio + " [BOB]");
+                        break;
+                    case 8:
+                        System.out.println("Ingrese la cantidad de Bolivianos que desea convertir a Dólares: ");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("BOB", "USD", cantidad);
+                        System.out.println("El valor " + cantidad + " [BOB] corresponde al valor final de =>>> " + montoDelCambio + " [USD]");
+                        break;
+                    case 9:
+                        System.out.println("Ingrese la cantidad de dólares que desea convertir a Pesos Chilenos: ");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("USD", "CLP", cantidad);
+                        System.out.println("El valor " + cantidad + " [USD] corresponde al valor final de =>>> " + montoDelCambio + " [CLP]");
+                        break;
+                    case 10:
+                        System.out.println("Ingrese la cantidad de Pesos Chilenos que desea convertir a Dólares: ");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("CLP", "USD", cantidad);
+                        System.out.println("El valor " + cantidad + " [CLP] corresponde al valor final de =>>> " + montoDelCambio + " [USD]");
+                        break;
+                    case 11:
+                        System.out.println("Ingrese la cantidad de dólares que desea convertir a Pesos Mexicanos: ");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("USD", "MXN", cantidad);
+                        System.out.println("El valor " + cantidad + " [USD] corresponde al valor final de =>>> " + montoDelCambio + " [MXN]");
+                        break;
+                    case 12:
+                        System.out.println("Ingrese la cantidad de Pesos Mexicanos que desea convertir a Dólares: ");
+                        cantidad = entrada.nextBigDecimal();
+                        montoDelCambio = cambio.conversion("MXN", "USD", cantidad);
+                        System.out.println("El valor " + cantidad + " [MXN] corresponde al valor final de =>>> " + montoDelCambio + " [USD]");
+                        break;
+                    case 0:
+                        condicion = false;
                         break;
                     default:
                         System.out.println("Opcion invalida.");
